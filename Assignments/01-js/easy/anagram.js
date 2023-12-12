@@ -6,15 +6,15 @@
 
 function isAnagram(str1, str2) {
   let isAnagram = false
-  const word1 = str1.split(' ').join('')
-  const word2 = str2.split(' ').join('')
+  const wordOne = str1.split(' ').join('')
+  const wordTwos = str2.split(' ').join('')
 
-  if(word1 === word2){
+  if(wordOne === wordTwos){
     isAnagram = true
   }
-  else if(word1.length === word2.length){
-    for(let i of word1){
-      if( word2.includes(i)){
+  else if(wordOne.length === wordTwos.length){
+    for(let i of wordOne){
+      if( wordTwos.includes(i)){
         isAnagram = true
       }
       else{
@@ -22,8 +22,8 @@ function isAnagram(str1, str2) {
       }
     }
   
-    for(let i of word2){
-      if(word1.includes(i)){
+    for(let i of wordTwos){
+      if(wordOne.includes(i)){
         isAnagram = true
       }
       else{
