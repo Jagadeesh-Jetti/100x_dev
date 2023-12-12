@@ -10,12 +10,12 @@ function findLargestElement(numbers) {
         return undefined
     }
     
-    let largest = numbers[0];
+    let largestNumber = numbers[0];
 
     numbers.forEach(element => {
-        element > largest ? largest = element: largest
+        element > largestNumber ? largestNumber = element: largestNumber
     });
-    return largest
+    return largestNumber
 }
 
 
