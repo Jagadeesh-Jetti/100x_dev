@@ -1,5 +1,6 @@
 /*
-Write a function that calculates the time (in seconds) it takes for the JS code to calculate sum from 1 to n, given n as the input.
+Write a function that calculates the time (in seconds) it takes for the JS code to calculate sum from 1 to n, 
+given n as the input.
 Try running it for
 1. Sum from 1-100
 2. Sum from 1-100000
@@ -9,5 +10,14 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    const startTime = new Date()
+    let sum = 0;
+    for(let i = 0; i <= n; i++){
+        sum += i
+    }
+    const endTime = new Date()
+    console.log(sum)
+    return (endTime - startTime)/1000
 }
+
+console.log(calculateTime(100000))
